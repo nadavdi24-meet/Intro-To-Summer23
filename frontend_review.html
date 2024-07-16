@@ -5,10 +5,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>hello.html</title>
+	<style>
+		body {background-color: powderblue;}
+		#intro {color: blueviolet;}
+		.radios {font: sans-serif;}
+
+	</style>
+
+	<script src="frontend_review_main.js"></script>
+
 </head>
 
 <body>
-	<p>hello, my name is Nadav</p>
+	<p id="intro">hello, my name is Nadav</p>
 	<h1>Yooooo</h1>
 	 <h2>suuuupppppp</h2>
 	 <img src="monkey in pink suit.jpg" width="400px">
@@ -17,17 +26,23 @@
 	 <br>
 	 <h1>MONKE</h1>
 
-	 <form>
+	 <form id="fav_col_form">
 	 	<input type="radio" id="fav_col_green" name="color">
-	 	<label for="fav_col_green">green</label>
+	 	<label for="fav_col_green" class="radios">green</label>
 	 	<br>
 	 	<input type="radio" id="fav_col_blue" name="color">
-	 	<label for="fav_col_blue">blue</label>
+	 	<label for="fav_col_blue" class="radios">blue</label>
 	 	<br>
 	 	<input type="radio" id="fav_col_red" name="color">
-	 	<label for="fav_col_red">red</label>
+	 	<label for="fav_col_red" class="radios">red</label>
 	 	<br>
 	 </form>
+	 <button id="submit_button" onclick="changeBackgroundColor()">Submit</button>
+
+
+	 </script>
+
+
 </body>
 
 </html>
