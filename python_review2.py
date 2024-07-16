@@ -19,4 +19,3 @@ for i in range(495):
 	like(youtube_video)
 
 print(youtube_video)
-
