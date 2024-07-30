@@ -17,7 +17,7 @@ highest_temp = 0
 lowest_temp = 100
 
 for i in temperatures:
-	if i >= lowest_temp:
+	if i <= lowest_temp:
 		lowest_temp = i
 	if i >= highest_temp:
 		highest_temp = i
@@ -31,16 +31,16 @@ lowest_temp_day = days_of_the_week[lowest_temp_day_index]
 sum = 0
 for i in temperatures:
 	sum = sum + i
-avg_temp = sum / length(temperatures)
+avg_temp = sum / len(temperatures)
 
 above_avg_days = []
 
-for i in temperatures:
-	if i >= avg_temp:
+for i in range(len(temperatures)):
+	if int(temperatures[i]) >= avg_temp:
 		above_avg_days.append(days_of_the_week[i])
 
-for i in days_of_the_week:
-	print(i , ": " , temperatures[i])
+for i in range(len(days_of_the_week)):
+	print(days_of_the_week[i] , ": " , temperatures[i])
 print("*")
 print("Shelly had " , good_days_count , " good days")
 print("*")
